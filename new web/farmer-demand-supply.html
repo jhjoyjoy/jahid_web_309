@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Demand and Supply Trends</title>
+  <link rel="stylesheet" href="farmer-demand-supply.css" />
+  <script defer src="farmer-demand-supply.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="header">
+    <h1><i class="fas fa-chart-line"></i> Crop Demand & Supply</h1>
+    <button id="backBtn"><i class="fas fa-arrow-left"></i> Back</button>
+  </header>
+
+  <main class="container">
+    <section class="trend-section">
+      <h2>Current Market Trends</h2>
+      <div class="trend-box" id="highDemand">
+        <h3><i class="fas fa-arrow-up"></i> High Demand Crops</h3>
+        <ul></ul>
+      </div>
+      <div class="trend-box" id="overSupplied">
+        <h3><i class="fas fa-arrow-down"></i> Oversupplied Crops</h3>
+        <ul></ul>
+      </div>
+    </section>
+
+    <section class="advice-section">
+      <h2>Suggested Planting Advice</h2>
+      <p id="suggestions">Loading suggestions based on market trends...</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AgriConnect. All rights reserved.</p>
+  </footer>
+</body>
+</html>

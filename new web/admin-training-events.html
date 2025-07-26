@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Training & Events | Admin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="admin-training-events.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📅 Training & Events Management</h1>
+
+    <!-- Post New Event -->
+    <section class="card">
+      <h2>Publish New Event</h2>
+      <form id="eventForm">
+        <label>Event Title:</label>
+        <input type="text" id="eventTitle" required>
+
+        <label>Date:</label>
+        <input type="date" id="eventDate" required>
+
+        <label>Time:</label>
+        <input type="time" id="eventTime" required>
+
+        <label>Place:</label>
+        <input type="text" id="eventPlace" required>
+
+        <label>Description:</label>
+        <textarea id="eventDescription" rows="3" required></textarea>
+
+        <button type="submit">Post Event</button>
+      </form>
+
+      <div class="result" id="eventResult"></div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="card">
+      <h2>Upcoming Events</h2>
+      <ul id="eventList" class="event-list"></ul>
+    </section>
+
+    <!-- Registration List -->
+    <section class="card">
+      <h2>Registered Users</h2>
+      <ul id="userList">
+        <li>🌾 Jahid Hasan (Farmer)</li>
+        <li>🌾 Fatema Akter (Farmer)</li>
+        <li>🌾 Rezaul Karim (Farmer)</li>
+        <!-- Simulated static list -->
+      </ul>
+    </section>
+  </div>
+
+  <script src="admin-training-events.js"></script>
+</body>
+</html>

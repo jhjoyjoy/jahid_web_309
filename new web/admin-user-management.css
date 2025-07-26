@@ -1,0 +1,103 @@
+:root {
+  --primary-color: #4a90e2;
+  --light-bg: #f8f9fa;
+  --text-dark: #333;
+  --border-color: #ddd;
+  --btn-bg: #4a90e2;
+  --btn-hover: #357ab8;
+  --danger: #dc3545;
+  --success: #28a745;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--light-bg);
+  color: var(--text-dark);
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  background-color: var(--btn-bg);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--btn-hover);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  background-color: #e9ecef;
+}
+
+td .action-btn {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.edit {
+  background-color: var(--success);
+  color: white;
+}
+
+.deactivate {
+  background-color: var(--danger);
+  color: white;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+input, select {
+  padding: 8px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  width: 200px;
+}
+
+.hidden {
+  display: none;
+}

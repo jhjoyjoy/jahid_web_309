@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feedback & Support</title>
+  <link rel="stylesheet" href="farmer-feedback.css" />
+  <script defer src="farmer-feedback.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="header">
+    <h1><i class="fas fa-comments"></i> Feedback & Support</h1>
+    <button id="backBtn"><i class="fas fa-arrow-left"></i> Back</button>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <h2>Submit Your Feedback or Query</h2>
+      <form id="feedbackForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" rows="5" placeholder="Enter your feedback or issue..." required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section class="history-section">
+      <h2>Your Previous Queries</h2>
+      <ul id="feedbackList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AgriConnect. All rights reserved.</p>
+  </footer>
+</body>
+</html>

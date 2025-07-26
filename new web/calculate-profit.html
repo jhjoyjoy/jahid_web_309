@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Profit Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="calculate-profit.css" />
+  <script defer src="calculate-profit.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <h1><i class="fas fa-coins"></i> Crop Profit Calculator</h1>
+    <button id="backBtn"><i class="fas fa-arrow-left"></i> Back</button>
+  </header>
+
+  <main class="container">
+    <form id="profitForm">
+      <div class="form-group">
+        <label for="cropName">Crop Name:</label>
+        <input type="text" id="cropName" required />
+      </div>
+
+      <div class="form-group">
+        <label for="quantity">Total Quantity Produced (kg):</label>
+        <input type="number" id="quantity" min="1" required />
+      </div>
+
+      <div class="form-group">
+        <label for="productionCost">Total Production Cost (Tk):</label>
+        <input type="number" id="productionCost" min="0" required />
+      </div>
+
+      <div class="form-group">
+        <label for="sellingPrice">Selling Price per kg (Tk):</label>
+        <input type="number" id="sellingPrice" min="1" required />
+      </div>
+
+      <div class="form-group">
+        <label for="extraCost">Transport/Storage Cost (Tk) <span>(Optional)</span>:</label>
+        <input type="number" id="extraCost" min="0" />
+      </div>
+
+      <button type="submit">Calculate Profit</button>
+    </form>
+
+    <section id="result" class="result-box hidden">
+      <h2>Profit Summary</h2>
+      <p id="output"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AgriConnect. All rights reserved.</p>
+  </footer>
+</body>
+</html>

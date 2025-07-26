@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Post News & Alerts | Admin</title>
+  <link rel="stylesheet" href="admin-post-news.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Post News & Alerts</h1>
+
+    <!-- News Form -->
+    <form id="newsForm">
+      <input type="text" id="title" placeholder="News Title" required />
+      <select id="type" required>
+        <option value="">Select Type</option>
+        <option value="Weather Alert">Weather Alert</option>
+        <option value="Govt Notice">Government Notice</option>
+        <option value="Training">Training Event</option>
+        <option value="General">General Info</option>
+      </select>
+      <textarea id="message" placeholder="Write the news content here..." rows="6" required></textarea>
+      <button type="submit">Publish</button>
+    </form>
+
+    <!-- News Table -->
+    <div class="news-list">
+      <h2>Published News & Alerts</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Type</th>
+            <th>Message</th>
+            <th>Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="newsTableBody">
+          <!-- Dynamic content -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="admin-post-news.js"></script>
+</body>
+</html>

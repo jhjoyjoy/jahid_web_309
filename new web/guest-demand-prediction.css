@@ -1,0 +1,93 @@
+/* demand-prediction.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fefefe;
+  color: #222;
+}
+
+.header {
+  background-color: #2e7d32;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.header button {
+  background-color: #1b5e20;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.header button:hover {
+  background-color: #114d15;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.intro {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #4a4a4a;
+  text-align: center;
+}
+
+.demand-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.demand-card {
+  background-color: #ffffff;
+  border-left: 6px solid #2e7d32;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1.25rem 1.5rem;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+  cursor: default;
+}
+
+.demand-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.demand-card h3 {
+  margin-top: 0;
+  color: #2e7d32;
+  font-size: 1.3rem;
+}
+
+.demand-card p {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #555;
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  font-size: 0.9rem;
+}

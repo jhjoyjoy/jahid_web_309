@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="weather.css" />
+  <script defer src="weather.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="navbar">
+    <h1><i class="fas fa-cloud-sun"></i> Weather Forecast</h1>
+    <button id="backBtn"><i class="fas fa-arrow-left"></i> Back</button>
+  </header>
+
+  <main class="content">
+    <div class="filter-section">
+      <label for="areaSelect">Select Area:</label>
+      <select id="areaSelect">
+        <option value="dhaka">Dhaka</option>
+        <option value="chattogram">Chattogram</option>
+        <option value="rajshahi">Rajshahi</option>
+        <option value="sylhet">Sylhet</option>
+        <option value="khulna">Khulna</option>
+        <option value="comilla">comilla</option>
+      </select>
+    </div>
+
+    <div class="weather-card" id="weatherCard">
+      <!-- Weather data will be loaded here -->
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AgriConnect. All rights reserved.</p>
+  </footer>
+</body>
+</html>

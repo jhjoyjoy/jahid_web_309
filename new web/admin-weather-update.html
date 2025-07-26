@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather Data Update | Admin</title>
+  <link rel="stylesheet" href="admin-weather-update.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌤️ Weather Data Update</h1>
+
+    <!-- Weather Forecast Form -->
+    <section class="card">
+      <h2>Post Weather Forecast</h2>
+      <form id="weatherForm">
+        <label for="region">Region:</label>
+        <input type="text" id="region" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+
+        <label for="forecast">Forecast:</label>
+        <textarea id="forecast" rows="3" required></textarea>
+
+        <button type="submit">Post Forecast</button>
+      </form>
+
+      <div class="result" id="forecastResult"></div>
+    </section>
+
+    <!-- Climate Advice Form -->
+    <section class="card">
+      <h2>Post Climate Advice</h2>
+      <form id="adviceForm">
+        <label for="adviceTitle">Title:</label>
+        <input type="text" id="adviceTitle" required>
+
+        <label for="adviceContent">Advice:</label>
+        <textarea id="adviceContent" rows="4" required></textarea>
+
+        <button type="submit">Post Advice</button>
+      </form>
+
+      <div class="result" id="adviceResult"></div>
+    </section>
+  </div>
+
+  <script src="admin-weather-update.js"></script>
+</body>
+</html>

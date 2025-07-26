@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Statistics & Reports | Admin</title>
+  <link rel="stylesheet" href="admin-statistics.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Statistics & Reports</h1>
+
+    <!-- Top In-Demand Crops -->
+    <section class="section">
+      <h2>Top In-Demand Crops</h2>
+      <ul class="crop-list">
+        <li>🥦 Broccoli</li>
+        <li>🌾 Basmati Rice</li>
+        <li>🥔 Potato</li>
+        <li>🌽 Corn</li>
+        <li>🍅 Tomato</li>
+      </ul>
+    </section>
+
+    <!-- Chart: Regional Demand & Supply -->
+    <section class="section">
+      <h2>Regional Demand/Supply Trends</h2>
+      <canvas id="trendChart" height="300"></canvas>
+    </section>
+
+    <!-- Farmer Report Table -->
+    <section class="section">
+      <h2>Farmer Activity Report</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Farmer Name</th>
+            <th>Region</th>
+            <th>Crop</th>
+            <th>Quantity Produced (kg)</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Md. Ali</td>
+            <td>Rajshahi</td>
+            <td>Rice</td>
+            <td>5000</td>
+            <td>Delivered</td>
+          </tr>
+          <tr>
+            <td>Rahim</td>
+            <td>Dhaka</td>
+            <td>Tomato</td>
+            <td>1200</td>
+            <td>Pending</td>
+          </tr>
+          <tr>
+            <td>Karim</td>
+            <td>Chattogram</td>
+            <td>Potato</td>
+            <td>3000</td>
+            <td>Delivered</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="admin-statistics.js"></script>
+</body>
+</html>

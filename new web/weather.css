@@ -1,0 +1,73 @@
+/* weather.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #e0f7fa, #ffffff);
+  color: #333;
+}
+
+.navbar {
+  background-color: #0288d1;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#backBtn {
+  background: white;
+  color: #0288d1;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#backBtn:hover {
+  background-color: #d9f0ff;
+}
+
+.content {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.filter-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.filter-section label {
+  font-weight: bold;
+}
+
+.weather-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.weather-card h2 {
+  margin-bottom: 1rem;
+  color: #0288d1;
+}
+
+.weather-card p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}

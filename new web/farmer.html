@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Farmer Dashboard</title>
+  <link rel="stylesheet" href="farmer.css" />
+  <script defer src="farmer.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="navbar">
+    <h1>Farmer Dashboard</h1>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <main class="dashboard">
+    <div class="card" onclick="navigate('market')">
+      <i class="fas fa-chart-line"></i>
+      <h2>Market Prices</h2>
+    </div>
+    <div class="card" onclick="navigate('weather')">
+      <i class="fas fa-cloud-sun"></i>
+      <h2>Weather Forecast</h2>
+    </div>
+    <div class="card" onclick="navigate('training')">
+      <i class="fas fa-book-open"></i>
+      <h2>Training Materials</h2>
+    </div>
+    <div class="card" onclick="navigate('soil')">
+      <i class="fas fa-seedling"></i>
+      <h2>Soil & Crop Advisory</h2>
+    </div>
+    <div class="card" onclick="navigate('feedback')">
+      <i class="fas fa-comments"></i>
+      <h2>Feedback & Support</h2>
+    </div>
+    <div class="card" onclick="navigate('demand')">
+      <i class="fas fa-balance-scale"></i>
+      <h2>Demand & Supply</h2>
+    </div>
+    <div class="card" onclick="navigate('profit')">
+      <i class="fas fa-calculator"></i>
+      <h2>Profit Calculator</h2>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AgriConnect. All rights reserved.</p>
+  </footer>
+</body>
+</html>

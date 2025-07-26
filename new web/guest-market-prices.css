@@ -1,0 +1,75 @@
+/* market-prices.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f8f5;
+  color: #333;
+}
+
+.header {
+  background-color: #00695c;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.header button {
+  background-color: #004d40;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.header button:hover {
+  background-color: #00332a;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.filter {
+  margin-bottom: 1.5rem;
+}
+
+.filter select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.price-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.price-table th, .price-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.price-table th {
+  background-color: #e0f2f1;
+  color: #00695c;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #e0f2f1;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}

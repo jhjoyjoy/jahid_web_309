@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | MarketInsight</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <div class="admin-container">
+    <aside class="sidebar">
+      <div class="logo">📊 Market<span>Insight</span></div>
+      <nav class="nav-menu">
+        <a href="admin-user-management.html"><i class="fas fa-users"></i> User Management</a>
+        <a href="admin-post-market-price.html"><i class="fas fa-seedling"></i> Market Prices</a>
+        <a href="admin-post-news.html"><i class="fas fa-bullhorn"></i> News & Alerts</a>
+        <a href="admin-statistics.html"><i class="fas fa-chart-bar"></i> Statistics</a>
+        <a href="admin-weather-update.html"><i class="fas fa-cloud-sun"></i> Weather Updates</a>
+        <a href="admin-training-events.html"><i class="fas fa-calendar-alt"></i> Events</a>
+        <a href="admin-feedback.html"><i class="fas fa-comment-dots"></i> Feedback</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <section id="userManagement" class="dashboard-section">
+        <h2>User Management</h2>
+        <p>Manage farmer accounts, edit details, and assign roles.</p>
+        <div class="button-group">
+          <button class="btn">View All Users</button>
+          <button class="btn">Edit / Deactivate User</button>
+          <button class="btn">Manage Roles</button>
+        </div>
+      </section>
+
+      <section id="marketPrice" class="dashboard-section">
+        <h2>Post Market Price</h2>
+        <p>Update current crop prices and upload historical data.</p>
+        <div class="button-group">
+          <button class="btn">Post New Price</button>
+          <button class="btn">Upload Historical Data</button>
+        </div>
+      </section>
+
+      <section id="newsAlerts" class="dashboard-section">
+        <h2>Post News & Alerts</h2>
+        <p>Publish market-related news and alerts to users.</p>
+        <div class="button-group">
+          <button class="btn">Publish News</button>
+          <button class="btn">Send Push Notification</button>
+        </div>
+      </section>
+
+      <section id="statsReports" class="dashboard-section">
+        <h2>Statistics & Reports</h2>
+        <p>Analyze trends and visualize data insights.</p>
+        <div class="button-group">
+          <button class="btn">View Crop Trends</button>
+          <button class="btn">View Regional Reports</button>
+          <button class="btn">Generate Charts</button>
+        </div>
+      </section>
+
+      <section id="weatherData" class="dashboard-section">
+        <h2>Weather Data Update</h2>
+        <p>Share weather forecasts and climate-related risks.</p>
+        <div class="button-group">
+          <button class="btn">Post Weather Forecast</button>
+          <button class="btn">Post Climate Advice</button>
+        </div>
+      </section>
+
+      <section id="trainingEvent" class="dashboard-section">
+        <h2>Training & Events</h2>
+        <p>Manage and publish training sessions and events.</p>
+        <div class="button-group">
+          <button class="btn">Publish New Event</button>
+          <button class="btn">View Registrations</button>
+        </div>
+      </section>
+
+      <section id="feedback" class="dashboard-section">
+        <h2>User Feedback</h2>
+        <p>View and respond to feedback from platform users.</p>
+        <div class="button-group">
+          <button class="btn">View Feedback</button>
+          <button class="btn">Respond to Feedback</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

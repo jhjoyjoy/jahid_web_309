@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Post Market Price | Admin</title>
+  <link rel="stylesheet" href="admin-post-market-price.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Post Market Price</h1>
+
+    <!-- Form to post or update crop price -->
+    <form id="priceForm">
+      <input type="text" id="cropName" placeholder="Crop Name" required />
+      <input type="text" id="region" placeholder="Region/District" required />
+      <input type="number" id="price" placeholder="Price per KG (Tk)" required />
+      <input type="date" id="date" required />
+      <button type="submit">Submit Price</button>
+    </form>
+
+    <!-- Upload CSV -->
+    <div class="upload-section">
+      <h2>Upload Historical Pricing Data</h2>
+      <input type="file" id="csvUpload" accept=".csv" />
+      <button onclick="uploadCSV()">Upload</button>
+    </div>
+
+    <!-- Price List Table -->
+    <div class="price-list">
+      <h2>Current Market Prices</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Crop</th>
+            <th>Region</th>
+            <th>Price (Tk/kg)</th>
+            <th>Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="priceTableBody">
+          <!-- Dynamic rows -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="admin-post-market-price.js"></script>
+</body>
+</html>

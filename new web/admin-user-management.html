@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Management | Admin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="admin-user-management.css">
+</head>
+<body>
+  <div class="container">
+    <h1>User Management</h1>
+
+    <section class="actions">
+      <button id="viewUsersBtn">View All Users</button>
+      <button id="editUserBtn">Edit / Deactivate User</button>
+      <button id="roleAccessBtn">Manage Roles</button>
+    </section>
+
+    <section id="userTableSection" class="hidden">
+      <h2>All Users</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>User ID</th>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="userTableBody">
+          <!-- Dynamic user rows will be inserted here -->
+        </tbody>
+      </table>
+    </section>
+
+    <section id="roleSection" class="hidden">
+      <h2>Manage Roles</h2>
+      <form id="roleForm">
+        <input type="text" placeholder="Enter User ID" required />
+        <select>
+          <option value="farmer">Farmer</option>
+          <option value="admin">Admin</option>
+          <option value="viewer">Viewer</option>
+        </select>
+        <button type="submit">Assign Role</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="admin-user-management.js"></script>
+</body>
+</html>

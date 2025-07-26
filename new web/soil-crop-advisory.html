@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soil & Crop Advisory</title>
+  <link rel="stylesheet" href="soil-crop-advisory.css" />
+  <script defer src="soil-crop-advisory.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1>Soil & Crop Advisory</h1>
+    <button id="backBtn">Back</button>
+  </header>
+
+  <main class="container">
+    <form id="advisoryForm">
+      <div class="input-group">
+        <label for="cropType">Crop Type:</label>
+        <select id="cropType">
+          <option value="">Select Crop</option>
+          <option value="rice">Rice</option>
+          <option value="wheat">Wheat</option>
+          <option value="maize">Maize</option>
+          <option value="vegetables">Vegetables</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="soilType">Soil Type:</label>
+        <select id="soilType">
+          <option value="">Select Soil</option>
+          <option value="loamy">Loamy</option>
+          <option value="clayey">Clayey</option>
+          <option value="sandy">Sandy</option>
+          <option value="silty">Silty</option>
+        </select>
+      </div>
+
+      <button type="submit">Get Recommendations</button>
+    </form>
+
+    <section id="recommendation" class="recommendation"></section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AgriConnect. All rights reserved.</p>
+  </footer>
+</body>
+</html>

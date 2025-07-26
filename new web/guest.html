@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guest Dashboard</title>
+  <link rel="stylesheet" href="guest.css" />
+  <script defer src="guest.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1>Guest Dashboard</h1>
+    <button id="backBtn">Back to Home</button>
+  </header>
+
+  <main class="dashboard">
+    <div class="card" onclick="navigate('market')">
+      <i class="fas fa-store"></i>
+      <h2>Market Prices</h2>
+      <p>View crop prices in different regions.</p>
+    </div>
+    <div class="card" onclick="navigate('news')">
+      <i class="fas fa-newspaper"></i>
+      <h2>Market News</h2>
+      <p>Latest agricultural and government updates.</p>
+    </div>
+    <div class="card" onclick="navigate('seasonal')">
+      <i class="fas fa-leaf"></i>
+      <h2>Seasonal Crops</h2>
+      <p>See crops best suited for the current season.</p>
+    </div>
+    <div class="card" onclick="navigate('prediction')">
+      <i class="fas fa-chart-bar"></i>
+      <h2>Demand Prediction</h2>
+      <p>Analyze future demand trends for crops.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AgriConnect. All rights reserved.</p>
+  </footer>
+</body>
+</html>

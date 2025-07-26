@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Feedback Management</title>
+  <link rel="stylesheet" href="admin-feedback.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🗣️ Admin Feedback Panel</h1>
+
+    <div class="card">
+      <h2>📨 Farmer Feedback</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Farmer Name</th>
+            <th>Feedback</th>
+            <th>Status</th>
+            <th>Reply</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="feedbackTableBody">
+          <!-- JS will load feedback rows -->
+        </tbody>
+      </table>
+      <button id="exportBtn">📥 Export Report</button>
+    </div>
+  </div>
+
+  <script src="admin-feedback.js"></script>
+</body>
+</html>
